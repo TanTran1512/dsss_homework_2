@@ -1,12 +1,12 @@
-import random
+import random as rd
 
 def generate_integer(min, max):
     """function to generate a random integer"""
-    return random.randint(min, max)
+    return rd.randint(min, max)
     
 def generate_operator():
     """function to generate a random arithmetic operation"""
-    return random.choice(['+', '-', '*'])
+    return rd.choice(['+', '-', '*'])
 
 
 def calculation(n1, n2, o):
@@ -40,7 +40,7 @@ def math_quiz():
                 break  # if input is valid, loop breaks
             except ValueError:
                 print("The input was not valid. Only integers.") # else the error message occurs
-        
+        # check user input
         if useranswer == ANSWER:
             print("Correct! You earned a point.")
             score += 1
