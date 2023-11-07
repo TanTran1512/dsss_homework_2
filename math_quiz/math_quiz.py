@@ -40,7 +40,7 @@ def math_quiz():
                 break  # if input is valid, loop breaks
             except ValueError:
                 print("The input was not valid. Only integers.") # else the error message occurs
-        # 
+        
         if useranswer == ANSWER:
             print("Correct! You earned a point.")
             score += 1
